@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Advice Generator </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ff9c2d3c4e.js" crossorigin="anonymous"></script>
+    <script src="chat.js"></script>
+</head>
+
+<body>
+    <div class="top-banner">
+        <div class="container">
+            <div class="small-bold-text banner-text">
+                <span>Free Advice: Now with 100% More Randomness!</span>
+                <!-- <span>Wisdom from the Universe (Or at Least From Us)</span>
+                <span>Advice So Random, It's Practically Magic</span>
+                <span>The Ultimate 'What Was I Thinking?' Generator</span>
+                <span>Pro Tips from Someone Who's Totally Not an Expert</span>
+                <span>Unsolicited Wisdom: Because Who Asked Anyway?</span>
+                <span>Daily Advice: Slightly More Reliable Than Your Uncle</span>
+                <span>Accidental Genius: Advice That's Almost Useful</span>
+                <span>Random Wisdom: Because Predictability Is Overrated</span>
+                <span>Life Tips from a Mystery Machine (No Guarantees!)</span> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="characters">
+            <div class="genie">
+                <img src="Genie.png" alt="Genie">
+            </div>
+            <div class="lamp active" onclick="toggleGenie();" id="lamp">
+                <img src="Lamp.png" alt="Lamp">
+            </div>
+        </div>
+
+        <div class="chat">
+            <div class="question">
+                <input id="question" type="text" class="search-input" placeholder="Got a Question? We've Got a Random Answer!">
+                <button class="question-send" onclick="chatOutput();">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="chat-bubble">
+                <span id="message"></span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
